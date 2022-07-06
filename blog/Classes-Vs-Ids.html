@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Classes Vs Ids</title>
+    <meta charset="UTF-8" />
+    <link href="../styles/main.css" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <!-- this is a comment. -->
+  <body style="margin: 0px">
+    <div>
+      <a href="../index.html">
+        <h1  class="title">
+          River Zone
+        </h1>
+      </a>
+    </div>
+    <div class="article-container">
+      <h2>Best Practices in using Classes vs Ids</h2>
+      <p>
+        CSS and HTML are the basic
+        building blocks of web pages. In simple terms HTML describes the
+        information that is displayed on a webpage, and CSS are the rules used
+        to describe the styles in which that information is displayed. While it
+        is possible to define rules that would apply to all of the data in a
+        page, it is often better to describe different rules for different areas
+        of the page. This allows a lot more diversity as you can imagine there
+        are usually a number of different elements on a page. There are a few
+        different ways we can do this, the two we will be talking about today
+        are classes and Ids. 
+         
+      </p>
+      <h2>Classes</h2>
+      <p>
+        Classes are used to define a set of rules
+        that will be re-used for different elements of the same type. For
+        example we might have a class that defines attributes for an article
+        section. This can be any type of attribute such as font size, alignment,
+        margins etc. The way we define classes is within the css file. First we
+        let the computer know we are referencing a class by using the dot
+        notation “.” followed by the class name. This is typically done with
+        lowercase words separated by hyphens. You follow this name with curly
+        brackets “{}” and put the relevant rules within those braces. An example
+        of this is shown below. 
+      </p>
+      <p>  <img src="../images/title_class.JPG" alt="Class CSS">
+      </p>
+      <p>To call upon a class within the
+        html we name the class within the element declaration. We do this by
+        calling class=”class-name”. An example of this is shown below. <img src="../images/title_class_html.JPG" alt="Class HTML">
+      </p>
+      <h2>IDs</h2>
+      <p> In contrast to classes, IDs are used when we want to define a
+        set of rules that will only be used for one element. For example we
+        might use an ID for a navigation bar or footer image etc. The naming
+        convention for IDs is the same as for classes with lower case words
+        separated by hyphens, but we define them in CSS with a hashtag “#”
+        instead of a dot. The same curly braces are used to define the rules.
+        Example below.
+      </p>
+      <p> <img src="../images/ID_CSS.JPG" alt="ID CSS">
+        </p>
+        <p>We call upon the ID with a similar method in
+        the HTML within the element declaration, but instead of
+        class=”class-name” it is id=”id-name”. An example is shown below.
+        <img src="../images/ID_HTML.JPG" alt="ID HTML">
+      </p>
+      <p> It is important to remember to use IDs only once, as the
+        interpreter is only expecting one and having multiple elements with the
+        same ID can cause bugs. Something to remember with IDs is that they are
+        given higher priority than classes. This means that if you have an
+        element with both a class and an ID, then the ID will overwrite any
+        attributes that are shared between the class and the ID. Make sure to
+        remember this when using both class and ID on the same element.</p>
+    </div>
+
+    <div>
+      <img id="footer-image" src="../images/scorpion.jpg" alt="scorpion" />
+    </div>
+  </body>
+</html>
