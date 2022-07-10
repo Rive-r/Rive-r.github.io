@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Javascript DOM</title>
+    <meta charset="UTF-8" />
+    <link href="../styles/main.css" rel="stylesheet" type="text/css" />
+  </head>
+  <!-- this is a comment. -->
+  <body style="margin: 0px">
+    <div>
+      <a href="../index.html">
+        <h1 class="title">River Zone</h1>
+      </a>
+    </div>
+    <div class="article">
+      <h2>Javascript Technical Blog</h2>
+      <h2>Javascript, HTML and CSS</h2>
+      <p>
+        In a recent blog post we talked about how HTML and CSS are the basic
+        building blocks of all webpages. While this is true there is another
+        element we have not yet discussed - Javascript. While not the only
+        language used in web development, it is by far and away the most
+        commonly used. In technical terms HTML and CSS are not programming
+        languages, they are markup languages. Javascript, however is a
+        programming language. Another way to understand this would be, if HTML
+        is the information on the page, and CSS is the style in which we display
+        that information then Javascript handles any interactions and more
+        complex functions the site may have.
+      </p>
+      <h2>Control flow and loops</h2>
+      <p>
+        Control flow in Javascript relates to how the code is run. In essence it
+        is the logic of the code. Code is run from top to bottom, unless it hits
+        an element that alters the control flow such as conditional statement,
+        or loop. You can think of this like a choose your own adventure novel.
+        If you were to read the book from cover to cover, it would be a jumble
+        of stories with no logic tying together the individual outcomes. Each
+        time you make a decision in the novel, think of that as a control flow
+        element. Controlling how the story flows from one point to the next,
+        based on the decision you make at the junction. Loops are an element
+        that run a portion of code for a number of times before meeting certain
+        conditions and moving on. To explain this lets think about washing a
+        dirty plate. We could break this action down into smaller actions, like
+        an individual scrub. Instead of scrubbing just once, or ten times etc.
+        We want to scrub until our plate is clean. So we need to know when the
+        plate will be clean, and let's say thats when we see no more dirt. So if
+        we run the loop once - scrub the plate once - and we see dirt still
+        remains. So the loop runs again. This process will repeat until there is
+        no dirt remaining, which means we can exit the loop. And we move on to
+        the next process, e.g. rinsing the plate.
+      </p>
+      <h2>Description of the DOM</h2>
+      <p>
+        The DOM is an acronym that represents Document Object Model. It's
+        function is to give us a way to interact with the HTML portion of a
+        webpage using Javascript. That is what the document part of the acronym
+        means - the HTML document that makes up the backbone of the webpage. The
+        object part of it refers to the way in which Javascript handles data.
+        Any entity or element described in the HTML document is converted into
+        an object or node to be represented in the DOM. The model part of the
+        acronym means that it is just a model of the HTML and not the real
+        thing. But it does give us the ability to interact and change the real
+        document. This is done through various functions that can be called on
+        the "document" object in Javascript.
+      </p>
+      <h2>Accessing data from Arrays and Objects</h2>
+      <p>
+        Arrays and Objects are two data types in Javascipt. Technically speaking
+        arrays are actually a type of object, but they behave in different ways.
+        Both arrays and objects are used for storing many values, but each have
+        distinct ways of accessing the data within them. Accessing data in
+        arrays is done by index. In a sense, an array is like an ordered list.
+        With each item in the list being stored at given position beginning at
+        index 0, up to however many objects are stored. This is done in the
+        format arrayName[index] , where index is a number. INSERT IMAGE
+        Accessing data in objects is done by key. Objects store data in the
+        format of key and value pairs. Each key property corresponds to a
+        property value that will get returned. This is because you can have
+        multiple iterations of an object, each with the same keys/properties,
+        but different values. This is done in the format object.keyName, or
+        object["keyName"]. INSERT IMAGE
+      </p>
+      <h2>Functions</h2>
+      <p>
+        Functions are a useful way to define pieces of code that we want to use
+        more than once. When put into our code, a function is not run until we
+        call it by it's name. Functions are given a name, and defined with or
+        without arguments. Followed by curly braces. We put the code that weff
+        want to run when we call the function within the curly braces. Functions
+        can run their code and do some action, and can also return information.
+        function functionName(argument1,argument2){ some code that we want to
+        run } It is useful to write functions when we want to do some series of
+        computations more than once like say update the score in a game, or
+        return a random value between two integers. The following code is a
+        function that we can use to give a random value between integers. \
+        INSERT IMAGE In this case, the value returned by the function is the
+        random integer that has been computed between the provided values. This
+        helps because instead of having to write out that code every time we
+        want the random integer, we can just call the function. It is also
+        adaptive in that we can use it for different input variations.
+      </p>
+      <p><img src = "../images/function_getRandomInt.JPG"></p>
+      <p>
+        
+      </p>
+    </div>
+
+    <div>
+      <img id="footer-image" src="../images/scorpion.jpg" alt="scorpion" />
+    </div>
+  </body>
+</html>
